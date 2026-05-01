@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DigiSen Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-rocket"></i> DigiSen Agency
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confidentialite.html">Confidentialité</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EN-TÊTE -->
+    <section class="page-header bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contactez-Nous</h1>
+            <p class="lead">Nous sommes à votre écoute pour discuter de vos projets</p>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                
+                <!-- FORMULAIRE DE CONTACT -->
+                <div class="col-lg-7">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Envoyez-nous un Message</h3>
+                            
+                            <!-- Formulaire -->
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    
+                                    <!-- Nom -->
+                                    <div class="col-md-6">
+                                        <label for="nom" class="form-label">
+                                            Nom complet <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" 
+                                               class="form-control" 
+                                               id="nom" 
+                                               required 
+                                               placeholder="Votre nom">
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">
+                                            Email <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="email" 
+                                               class="form-control" 
+                                               id="email" 
+                                               required 
+                                               placeholder="votre@email.com">
+                                    </div>
+
+                                    <!-- Téléphone -->
+                                    <div class="col-md-6">
+                                        <label for="telephone" class="form-label">
+                                            Téléphone
+                                        </label>
+                                        <input type="tel" 
+                                               class="form-control" 
+                                               id="telephone" 
+                                               placeholder="+221 77 000 00 00">
+                                    </div>
+
+                                    <!-- Service -->
+                                    <div class="col-md-6">
+                                        <label for="service" class="form-label">
+                                            Service souhaité
+                                        </label>
+                                        <select class="form-select" id="service">
+                                            <option selected>Choisir un service</option>
+                                            <option>Marketing Digital</option>
+                                            <option>Gestion Réseaux Sociaux</option>
+                                            <option>Création de Contenu</option>
+                                            <option>Publicité en ligne</option>
+                                            <option>Autre</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Sujet -->
+                                    <div class="col-12">
+                                        <label for="sujet" class="form-label">
+                                            Sujet <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" 
+                                               class="form-control" 
+                                               id="sujet" 
+                                               required 
+                                               placeholder="Ex: Demande de devis">
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">
+                                            Message <span class="text-danger">*</span>
+                                        </label>
+                                        <textarea class="form-control" 
+                                                  id="message" 
+                                                  rows="5" 
+                                                  required 
+                                                  placeholder="Décrivez votre projet..."></textarea>
+                                    </div>
+
+                                    <!-- Checkbox -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" 
+                                                   type="checkbox" 
+                                                   id="acceptRGPD" 
+                                                   required>
+                                            <label class="form-check-label" for="acceptRGPD">
+                                                J'accepte la 
+                                                <a href="confidentialite.html">politique de confidentialité</a>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bouton -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            <i class="fas fa-paper-plane"></i> Envoyer le Message
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                            <!-- Message de confirmation (caché par défaut) -->
+                            <div id="confirmationMessage" 
+                                 class="alert alert-success mt-3 d-none" 
+                                 role="alert">
+                                <i class="fas fa-check-circle"></i> 
+                                Merci ! Votre message a été envoyé avec succès.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INFORMATIONS DE CONTACT -->
+                <div class="col-lg-5">
+                    
+                    <!-- Coordonnées -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">
+                                <i class="fas fa-info-circle text-primary"></i> 
+                                Nos Coordonnées
+                            </h4>
+                            
+                            <!-- Adresse -->
+                            <div class="contact-info mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon-box me-3">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Adresse</h6>
+                                        <p class="text-muted mb-0">
+                                            Avenue Bourguiba, Plateau<br>
+                                            Dakar, Sénégal
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Téléphone -->
+                            <div class="contact-info mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon-box me-3">
+                                        <i class="fas fa-phone fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Téléphone</h6>
+                                        <p class="text-muted mb-0">
+                                            <a href="tel:+221770000000">+221 77 000 00 00</a><br>
+                                            <a href="tel:+221338234567">+221 33 823 45 67</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-info mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon-box me-3">
+                                        <i class="fas fa-envelope fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Email</h6>
+                                        <p class="text-muted mb-0">
+                                            <a href="mailto:contact@agencemarketing.sn">
+                                                contact@agencemarketing.sn
+                                            </a><br>
+                                            <a href="mailto:info@agencemarketing.sn">
+                                                info@agencemarketing.sn
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Horaires -->
+                            <div class="contact-info">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon-box me-3">
+                                        <i class="fas fa-clock fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Horaires d'ouverture</h6>
+                                        <p class="text-muted mb-0">
+                                            Lundi - Vendredi : 9h - 18h<br>
+                                            Samedi : 9h - 13h<br>
+                                            Dimanche : Fermé
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="mb-3">Suivez-nous</h5>
+                            <div class="social-links-large">
+                                <a href="#" class="btn btn-primary btn-lg me-2 mb-2">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-lg me-2 mb-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-info btn-lg me-2 mb-2">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-dark btn-lg mb-2">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTE GOOGLE MAPS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Notre Emplacement</h3>
+            <div class="ratio ratio-21x9">
+                <!-- Google Maps embed (Dakar) -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31027.446741856773!2d-17.468013!3d14.693425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10d77c9e9b1c3%3A0x31c3e77f1e4b35a4!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1234567890" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-rocket"></i> DigiSen Agency
+                    </h5>
+                    <p>Votre partenaire digital à Dakar</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Accueil</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li><a href="confidentialite.html" class="text-white-50">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Contactez-nous</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt"></i> Dakar, Sénégal
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone"></i> +221 77 000 00 00
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope"></i> contact@agencemarketing.sn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 DigiSen Agency - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

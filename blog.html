@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Marketing - DigiSen Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-rocket"></i> DigiSen Agency
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confidentialite.html">Confidentialité</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EN-TÊTE -->
+    <section class="page-header bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Notre Blog Marketing</h1>
+            <p class="lead">Conseils, astuces et tendances du marketing digital</p>
+        </div>
+    </section>
+
+    <!-- CATÉGORIES -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <button class="btn btn-outline-primary category-btn active" data-category="tous">
+                    Tous les articles
+                </button>
+                <button class="btn btn-outline-primary category-btn" data-category="marketing">
+                    Marketing Digital
+                </button>
+                <button class="btn btn-outline-primary category-btn" data-category="reseaux">
+                    Réseaux Sociaux
+                </button>
+                <button class="btn btn-outline-primary category-btn" data-category="seo">
+                    SEO
+                </button>
+                <button class="btn btn-outline-primary category-btn" data-category="branding">
+                    Branding
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLES DE BLOG -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Article 1 -->
+                <div class="col-md-6 col-lg-4" data-category="marketing">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" 
+                             class="card-img-top" 
+                             alt="Marketing digital">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Marketing Digital</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 15 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                10 Stratégies de Marketing Digital pour 2024
+                            </h5>
+                            <p class="card-text">
+                                Découvrez les tendances incontournables du marketing digital 
+                                pour propulser votre entreprise cette année.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Amadou Diop
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="col-md-6 col-lg-4" data-category="reseaux">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400" 
+                             class="card-img-top" 
+                             alt="Réseaux sociaux">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-info">Réseaux Sociaux</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 12 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Comment Gérer vos Réseaux Sociaux Efficacement
+                            </h5>
+                            <p class="card-text">
+                                Les meilleures pratiques pour un community management 
+                                qui engage votre audience au quotidien.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Fatou Sall
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="col-md-6 col-lg-4" data-category="seo">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1571721795195-a2ca0778d1e8?w=400" 
+                             class="card-img-top" 
+                             alt="SEO">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-success">SEO</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 10 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Guide Complet du SEO pour Débutants
+                            </h5>
+                            <p class="card-text">
+                                Apprenez les bases du référencement naturel pour 
+                                améliorer votre visibilité sur Google.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Moussa Ndiaye
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="col-md-6 col-lg-4" data-category="branding">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=400" 
+                             class="card-img-top" 
+                             alt="Branding">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-warning">Branding</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 8 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Créer une Identité de Marque Forte
+                            </h5>
+                            <p class="card-text">
+                                Les étapes essentielles pour construire une marque 
+                                mémorable et différenciée.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Awa Diallo
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="col-md-6 col-lg-4" data-category="marketing">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400" 
+                             class="card-img-top" 
+                             alt="Facebook Ads">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Marketing Digital</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 5 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Maîtriser Facebook Ads en 5 Étapes
+                            </h5>
+                            <p class="card-text">
+                                Un guide pratique pour créer des campagnes publicitaires 
+                                rentables sur Facebook et Instagram.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Cheikh Sy
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="col-md-6 col-lg-4" data-category="reseaux">
+                    <article class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400" 
+                             class="card-img-top" 
+                             alt="Instagram">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-info">Réseaux Sociaux</span>
+                                <span class="text-muted ms-2">
+                                    <i class="fas fa-calendar"></i> 3 Jan 2024
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Instagram : Les Secrets d'un Profil Performant
+                            </h5>
+                            <p class="card-text">
+                                Optimisez votre présence Instagram pour attirer et 
+                                engager votre audience cible.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                Lire la suite <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="fas fa-user"></i> Par Mariama Ba
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- PAGINATION -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">Précédent</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Suivant</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">
+                        <i class="fas fa-envelope"></i> Abonnez-vous à notre Newsletter
+                    </h3>
+                    <p>Recevez nos meilleurs articles marketing directement dans votre boîte mail</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="row g-2">
+                        <div class="col-md-8">
+                            <input type="email" 
+                                   class="form-control form-control-lg" 
+                                   placeholder="Votre email">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-warning btn-lg w-100">
+                                S'abonner
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-rocket"></i> DigiSen Agency
+                    </h5>
+                    <p>Votre partenaire digital à Dakar</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Accueil</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li><a href="confidentialite.html" class="text-white-50">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Contactez-nous</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt"></i> Dakar, Sénégal
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone"></i> +221 77 000 00 00
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope"></i> contact@agencemarketing.sn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 DigiSen Agency - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
