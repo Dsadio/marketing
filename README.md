@@ -1,8 +1,8 @@
-# 🚀 DigiSen Agency - Site Web Marketing Digital
+# DigiSen Agency - Site Web Marketing Digital
 
 Site web professionnel pour une agence de marketing digital basée à Dakar, Sénégal.
 
-## 📌 Description
+##  Description
 
 DigiSen Agency est un site vitrine moderne et responsive présentant les services d'une agence de marketing digital. Le site comprend :
 
@@ -13,7 +13,7 @@ DigiSen Agency est un site vitrine moderne et responsive présentant les service
 - ✅ Politique de confidentialité complète
 - ✅ Design responsive (mobile, tablette, desktop)
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
 - **HTML5** : Structure sémantique
 - **CSS3** : Styles personnalisés + animations
@@ -21,4 +21,4 @@ DigiSen Agency est un site vitrine moderne et responsive présentant les service
 - **Bootstrap 5** : Framework CSS responsive
 - **Font Awesome** : Icônes professionnelles
 
-## 📁 Structure du Projet
+##  Structure du Projet
